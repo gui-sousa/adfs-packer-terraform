@@ -2,10 +2,12 @@
     "builders": [
       {
         "type": "googlecompute",
+        "account_file": "loja-virtual-sa-packer.json",
         "project_id": "loja-virtual-324215",
-        "source_image": "windows-server-2019-dc-v20200813",
+        "source_image": "windows-server-2016-dc-v20210608",
         "disk_size": "50",
-        "machine_type": "n1-standard-2",
+        "startup_script_file": "./oi-mundo.ps1",
+        "machine_type": "n1-highcpu-2",
         "communicator": "winrm",
         "winrm_username": "packer_user",
         "winrm_insecure": true,
@@ -13,7 +15,7 @@
         "metadata": {
           "windows-startup-script-cmd": "winrm quickconfig -quiet & net user /add packer_user & net localgroup administrators packer_user /add & winrm set winrm/config/service/auth @{Basic=\"true\"}"
         },
-        "zone": "us-central1-a"
+        "zone": "southamerica-east1-a"
       }
     ]
   }

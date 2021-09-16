@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "loja-virtual-324215",
+  "private_key_id": "9352e57a2a15450f9fc9e3d5c2a3197b32ead328",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvS2EdL/ZLUQfk\nFs0n1kl8OzCqEtFAxKYnSUwTiQik1kVplgg3nLMfrPmzftYbNJlfRhC+jT1K6epG\ns18+TO0s2yMkCk0D/JH4Ab6eUsAKZd1EV1zeh3o5659adxh1oJFGmePeYrtl9Tz2\nMx2JgvAAa7g9O99mPtdNScXrbh4O/WXKzqv0DZlGqzGyt56Lfc1A0ZfdXU2kgtCK\no2xkfP3L89Nc4vPH0Wwm5LwTYNBKIKp0AMIqT8igPgCP9LxeWc5Jck83w9Q8yAJ5\nUiYplWJjVGxBY1XLgaUSLMM5Q/dY7UDsssROXVgoWRly8Fc2lFaqREdAw9d3U0Ho\nr87ZmfXDAgMBAAECggEAMNfrHmvfz8qrTTXBQmlmHnSLscf+gHKK7YVx6juTqgJ+\nYtZIQd6q1penGAmudPQqDC8EuWO3gWk+Oyb90ekzaP1ChGdOYF7++UDbMVhTZFJP\n3hwNp3/OYdcyls16hkQQVsDIio2uM9Gqg9toTomqgCODuaQ2MlIuQb3dpSUQwRIK\nFNVHI6TYbyl/rCiEujace5BAvA/CjODoritkpAw+o/J94SPLn5bunWMW0sG0rqnv\nxaUKddMnsCbcxuWpRQ6oIvPfKbrpj4BCIkBxm+TvcBGUoQMUSwOpEg6+EssP+iQr\nrcF9d0C7Piv3CDzZ/Rk7qLQLqDT9NAxYq8UaB3FWMQKBgQDfO531ggKYFdFZQts3\nO0L3xc91SxNk4nfFMsXxxyJ5qEDXOD/U0W581J3N1K2k5NOiNQ2c6tvadc4kAPtp\nyPTkG/OAxdJ0KiCwshMzeYBuQ9g9cyf5UnSSLPNg6RopvBmbzsjVRfiwaa4LGbMR\nUExzfW8Wv50fjFqX0yYyIxtsGQKBgQDJBmNrasuft4vDIgoCQSsxahAp8OVJYbLQ\ns2v/jNdC2bu8NTZPJ3kYj4euZAn3+6jSeZ8oEUs55E50lVUWmbaLW+l2AVBHjEU/\nfY3gapioLqrXld2j6X9pQY45kQqEH1dQP0bKyIxSaa6yt8jmCeZcaXDZzssK85ls\ncPG708nsOwKBgQCTfSwsHS3hleivdQCpSTpBwiwDbwrtSMOhQp6N0+fvQT818zAZ\nSBYb2843RCFGJPm+3haUaoe/mr4MA6oYhnFmlSEZH5qgrYTTuZP+GnTEZYblcsQi\nclwaiCB1Ew36LREuZD1Ey+o3hFs9cklhUxBv7ZwMB6WkRnNEhHlj/tYLYQKBgHNh\np07QTW+u+hlWQEhq/0+tgPmRuwkTen8vfJ2BSUyljIvKPxHPpkHioA4IfXBIke28\nwQ1OX88qq51e2SfPsmbqqmWA+4MVj+mRNw3IITbnEkgLTNv3+ZmAdxGznkWXd5Yn\nu4pI8cGbxxntQvJGXGJOYuehOglfKICFkzorpYphAoGBAKG3vtwRf1Yjaq3wF9sZ\n6wZlLuFu5yAnm5X3w/ulHNNMv+2wa4Sw214pjyj6te0EZ+lLTbDG/4sBjKHdGIlm\nqWrbgjFKa46Svy9xa88GpVqGtDH7G3i6h9yqtLMgORODTt/AwtP0pn6e2J2SVW8v\njJl6f3Qj/fsWKPO67tITVECn\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-sa@loja-virtual-324215.iam.gserviceaccount.com",
+  "client_id": "111397647718394186951",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-sa%40loja-virtual-324215.iam.gserviceaccount.com"
+}
