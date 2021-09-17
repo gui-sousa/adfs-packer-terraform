@@ -24,8 +24,6 @@
     "provisioners": [
       {
         "type": "powershell",
-        "elevated_user": "packer_user",
-        "elevated_password": "",
         "script": "./oi-mundo.ps1"
       }
     ]
