@@ -15,10 +15,18 @@
         "winrm_insecure": true,
         "winrm_use_ssl": true,
         "metadata": {
-          "windows-startup-script-cmd": "winrm quickconfig -quiet & net user /add packer_user & net localgroup administrators packer_user /add & winrm set winrm/config/service/auth @{Basic=\"true\"}",
-          "startup-script-cmd": "./oi-mundo.ps1"
+          "windows-startup-script-cmd": "winrm quickconfig -quiet & net user /add packer_user & net localgroup administrators packer_user /add & winrm set winrm/config/service/auth @{Basic=\"true\"}"
         },
         "zone": "southamerica-east1-a"
       }
+    ],
+
+    "provisioners": [
+      {
+        "type": "powershell",
+        "elevated_user": "packer_user",
+        "elevated_password": "",
+        "script": "./oi-mundo.ps1"
+      }
     ]
-  }
+} 
