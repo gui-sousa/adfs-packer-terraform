@@ -4,7 +4,7 @@ resource "google_compute_instance" "servidor-iis" {
    zone = "southamerica-east1-a"
    boot_disk {
       initialize_params {
-      image = "packer-1631835385"
+      image = "windows-server-adfs"
    }
    
 }
