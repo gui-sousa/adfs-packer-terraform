@@ -20,7 +20,7 @@ service_account {
 
 
 provisioner "local-exec" {
-  command = "ANSIBLE_HOST_KEY_CHECKING=\"False\" ansible-playbook -i ${google_compute_instance.servidor-windows-adfs.network_interface.0.access_config.0.nat_ip}, playbook.yml"
+  command = "sleep 120;ansible-playbook -i hosts.ini playbook.yml"
 
 }
 

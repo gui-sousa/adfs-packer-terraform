@@ -20,10 +20,15 @@
       }
     ],
 
+    
     "provisioners": [
-      {
-        "type": "powershell",
-        "script": "./config-winrm-ansible.ps1"
-      }
-    ]
+     {
+      "type": "powershell",
+      "scripts": [
+          "./config-user-adm.ps1",
+          "./config-winrm-ansible.ps1"
+      ]
+     }
+  ]
+
 } 

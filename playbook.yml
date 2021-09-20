@@ -1,15 +1,9 @@
 ---
-- hosts: all
-  vars:
-    ansible_connection: winrm
-    ansible_ssh_port: 5986
-    ansible_ssh_user: Administrator
-    ansible_ssh_pass: myTempPassword123
-    ansible_winrm_transport: basic
-    ansible_winrm_server_cert_validation: ignore
+- hosts: win
+
   
   tasks:
     - name: Cria uma Pasta
-      become: yes
-      win_command: cmd.exe /c mkdir C:\oi-mundo
+      
+      win_command: cmd.exe /c mkdir C:\Users\adfs\Desktop\oi-mundo
 

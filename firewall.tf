@@ -7,7 +7,7 @@ resource "google_compute_firewall" "adfs-firewall" {
     }
     allow {
       protocol = "tcp"
-      ports = ["3389","5986","80","443"]
+      ports = ["3389","5986","80","443","8080"]
     }
   
 }
