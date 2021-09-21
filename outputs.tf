@@ -3,6 +3,6 @@ output "IP_ADFS" {
     description = "Endereço IP do Servidor ADFS"
 }
 
-output "HOST_ANSIBLE" {
+/* output "HOST_ANSIBLE" {
     value = "${data.template_file.host-ansible.rendered}"
-}
+} */
