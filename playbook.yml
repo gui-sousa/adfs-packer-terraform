@@ -1,9 +1,12 @@
 ---
 - hosts: win
 
-  
+  become_method: runas
   tasks:
+    - name: Espera disponibilidade da Instancia
+      wait_for_connection:
+        timeout: 120
+    
     - name: Cria uma Pasta
-      
       win_command: cmd.exe /c mkdir C:\Users\adfs\Desktop\oi-mundo
 
