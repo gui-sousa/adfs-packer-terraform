@@ -136,3 +136,10 @@
       groups:
        - Domain Admins
 
+  - name: Instala adfs
+    win_feature: 
+      name: "ADFS-Federation"
+      state: present
+      include_sub_features: true
+      include_management_tools: true
+

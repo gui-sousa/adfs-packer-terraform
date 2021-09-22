@@ -1,6 +1,6 @@
 resource "google_compute_instance" "servidor-windows-adfs" {
    name = "servidor-windows-adfs"
-   machine_type = "n1-highcpu-2"
+   machine_type = "n2-highcpu-4"
    zone = "southamerica-east1-a"
    boot_disk {
       initialize_params {
