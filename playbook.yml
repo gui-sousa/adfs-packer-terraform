@@ -5,7 +5,7 @@
     temp_address: 35.198.18.5
     dc_address: 35.198.18.5
     dc_netmask_cidr: 24
-    dc_gateway: 172.16.108.2
+    dc_gateway: 35.198.18.5
     dc_hostname: 'adfs-lab'
     domain_name: "bwg.lab"
     local_admin: '.\administrator'
@@ -120,15 +120,35 @@
     register: result           
     until: result is succeeded
 
-  - name: Check for xRemoteDesktopAdmin Powershell module
-    win_psmodule:
-      name: xRemoteDesktopAdmin
+  - name: Install IIS
+    win_feature:
+      name: "web-server"
       state: present
-    delegate_to: "{{ dc_address }}"
+      restart: yes
+      include_sub_features: yes
+      include_management_tools: yes
 
-  - name: Enable Remote Desktop
-    win_dsc:
-      resource_name: xRemoteDesktopAdmin
-      Ensure: present
-      UserAuthentication: NonSecure
-    delegate_to: "{{ dc_address }}"
+  - name: Copia Certificado para o host
+    win_copy:
+      src: /home/guisousa/Adfs-Packer-Terraform/adfscert.pfx
+      dest: C:\
+
+  - name: Instala o Certificado 
+    win_certificate_store:
+      path: C:\adfscert.pfx
+      state: present
+      password: P@ssw0rd
+      store_location: LocalMachine
+      key_storage: machine
+    become: yes
+    become_method: runas
+    become_user: SYSTEM
+  
+  - name: Cria User
+    win_domain_user:
+      name: quaquaqua
+      password: P@ssw0rd
+      state: present
+      groups:
+       - Domain Admins
+

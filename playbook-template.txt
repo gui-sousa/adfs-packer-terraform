@@ -130,17 +130,19 @@
 
   - name: Copia Certificado para o host
     win_copy:
-      src: ./adfscert.pfx
-      dest: C:\temp_install
+      src: /home/guisousa/Adfs-Packer-Terraform/adfscert.pfx
+      dest: C:\
 
   - name: Instala o Certificado 
     win_certificate_store:
-      path: C:\temp_intall\adfscert.pfx
+      path: C:\adfscert.pfx
       state: present
       password: P@ssw0rd
-      key_exportable: true
+      store_location: LocalMachine
       key_storage: machine
-      file_type: pkcs12
+    become: yes
+    become_method: runas
+    become_user: SYSTEM
   
   - name: Cria User
     win_domain_user:
