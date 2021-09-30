@@ -128,6 +128,22 @@
       include_sub_features: yes
       include_management_tools: yes
 
+  - name: Copia Certificado para o host
+    win_copy:
+      src: /home/guisousa/Adfs-Packer-Terraform/adfscert.pfx
+      dest: C:\
+
+  - name: Instala o Certificado 
+    win_certificate_store:
+      path: C:\adfscert.pfx
+      state: present
+      password: P@ssw0rd
+      store_location: LocalMachine
+      key_storage: machine
+    become: yes
+    become_method: runas
+    become_user: SYSTEM
+  
   - name: Cria User
     win_domain_user:
       name: quaquaqua
