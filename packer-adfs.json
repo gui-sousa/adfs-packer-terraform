@@ -2,11 +2,11 @@
     "builders": [
       {
         "type": "googlecompute",
-        "account_file": "loja-virtual-sa-packer.json",
-        "project_id": "loja-virtual-324215",
+        "account_file": "adfs-dev.json",
+        "project_id": "balancer-346514",
         "instance_name": "homolog-windows-server-adfs",
-        "image_name": "windows-server-winrm",
-        "source_image": "windows-server-2016-dc-v20210608",
+        "image_name": "windows-server-winrm-2019",
+        "source_image": "windows-server-2019-dc-v20220314",
         "disk_size": "50",
         "machine_type": "n1-highcpu-2",
         "communicator": "winrm",

@@ -11,5 +11,5 @@ variable "regiao" {
 }
 
 variable "projeto" {
-    default = "loja-virtual-324215"
+    default = "balancer-346514"
 }

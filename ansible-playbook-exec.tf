@@ -8,6 +8,6 @@ resource "null_resource" "playbook-exec" {
   ]
 
   provisioner "local-exec" {
-  command = "ansible-playbook -i hosts.ini playbook.yml"
+  command = "ansible-playbook -i hosts.ini playbook.yml -vvv"
   }
 }

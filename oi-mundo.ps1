@@ -1,1 +1,0 @@
-New-Item -Path c:\oi-mundo.txt

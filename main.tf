@@ -1,5 +1,5 @@
 provider "google" {
-    credentials = file("loja-virtual-sa-packer.json")
+    credentials = file("adfs-dev.json")
     project = "${var.projeto}"
     region = "${var.regiao}"
 }
