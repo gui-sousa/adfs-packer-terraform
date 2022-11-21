@@ -2,10 +2,10 @@
 - name: Cria Ambiente Active Directory e ADFS
   hosts: win
   vars:
-    temp_address: ${ip_instancia}
-    dc_address: ${ip_instancia}
+    temp_address: 35.196.26.39
+    dc_address: 35.196.26.39
     dc_netmask_cidr: 24
-    dc_gateway: ${ip_instancia}
+    dc_gateway: 35.196.26.39
     dc_hostname: 'adfs'
     domain_name: "bwglab.local"
     local_admin: '.\administrator'
@@ -165,12 +165,6 @@
     
   - name: Configura ADFSS
     win_shell: C:\temp\scripts\config-adfs.ps1
-    become: yes
-    become_method: runas
-    become_user: administrator
-
-  - name: Configura Relação de Confiança - ADFS
-    win_shell: C:\temp\scripts\config-rp-adfs.ps1
     become: yes
     become_method: runas
     become_user: administrator
