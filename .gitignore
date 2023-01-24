@@ -1,9 +1,13 @@
-adfs-plano.txt
+adfs-plano
+adfs-plano.log
 adfs-dev.json
 terraform.tfstate
+terraform.tfstate.backup
 **/.terraform/*
 *.tfstate.lock.info
 crash.log
 crash.*.log
 .terraform.lock.hcl
 adfs-dev.json:Zone.Identifier
+certificado.pfx
+certificado.old

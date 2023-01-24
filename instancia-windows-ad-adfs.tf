@@ -18,4 +18,7 @@ resource "google_compute_instance" "servidor-windows-adfs" {
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
   }
 
+  tags = ["http-server", "https-server"]
+
 }
+
