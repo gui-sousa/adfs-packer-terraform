@@ -1,6 +1,6 @@
 #Variaveis
-$RPName = "4beeWork"
-$RPLink = "https://apiplusauth.4bee.com.br/"
+$RPName = "Work"
+$RPLink = "https://apiplusauth.com.br/"
 
 #Cria Relação de Confiança WS Federantion
 Add-AdfsRelyingPartyTrust -Name $RPName -Identifier $RPLink -WSFedEndpoint $RPLink
