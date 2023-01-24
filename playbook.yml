@@ -2,10 +2,10 @@
 - name: Cria Ambiente Active Directory e ADFS
   hosts: win
   vars:
-    temp_address: ${ip_instancia}
-    dc_address: ${ip_instancia}
+    temp_address: 35.237.156.8
+    dc_address: 35.237.156.8
     dc_netmask_cidr: 24
-    dc_gateway: ${ip_instancia}
+    dc_gateway: 35.237.156.8
     dc_hostname: 'adfs'
     domain_name: "bwglab.local"
     local_admin: '.\administrator'
