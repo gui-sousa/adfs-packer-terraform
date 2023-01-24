@@ -9,5 +9,5 @@ crash.log
 crash.*.log
 .terraform.lock.hcl
 adfs-dev.json:Zone.Identifier
-scripts/certificado.pfx
-scripts/certificado.old
+certificado.pfx
+certificado.old
