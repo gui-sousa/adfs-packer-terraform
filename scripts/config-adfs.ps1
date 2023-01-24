@@ -11,7 +11,7 @@ Install-AdfsFarm -CertificateThumbprint $ADFSprint -FederationServiceName $ADFSn
 Set-AdfsProperties -EnableIdpInitiatedSignonPage $True
 
 #Define imagem de Fundo para a pagina de Login
-Set-AdfsWebTheme -TargetName default -Illustration @{path="c:\temp\src\fundobwg.png"}
+Set-AdfsWebTheme -TargetName default -Illustration @{path="c:\temp\src\fundo.png"}
 
 #Define logotipo na pagina de Login
-Set-AdfsWebTheme -TargetName default -Logo @{path="c:\temp\src\logobwg.png"}
+Set-AdfsWebTheme -TargetName default -Logo @{path="c:\temp\src\logo.png"}
