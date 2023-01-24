@@ -1,7 +1,7 @@
 #Variaveis
 $ADFSpwd = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 $ADFScred = New-Object System.Management.Automation.PSCredential ("bwglab\guisousa", $ADFSpwd)
-$ADFSnome = "adfs.4bee.com.br"
+$ADFSnome = "adfs.lab.com.br"
 $ADFSprint = "5f53e807f15563d1f4631bd9ce05bd6ea3dbe5b1"
 
 #Configuração ADFS
