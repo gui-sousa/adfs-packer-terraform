@@ -2,8 +2,8 @@
     "builders": [
       {
         "type": "googlecompute",
-        "account_file": "adfs-dev.json",
-        "project_id": "neural-sol-373513",
+        "account_file": "/home/guisousa/bwg-work/keys/bwg-work-tfsa.json",
+        "project_id": "bwg-work",
         "instance_name": "homolog-windows-server-adfs",
         "image_name": "windows-server-winrm-2019",
         "source_image": "windows-server-2019-dc-v20220314",
