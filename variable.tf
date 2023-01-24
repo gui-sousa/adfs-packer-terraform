@@ -11,5 +11,5 @@ variable "regiao" {
 }
 
 variable "projeto" {
-  default = "scenic-healer-324218"
+  default = "bwg-work"
 }

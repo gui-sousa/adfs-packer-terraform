@@ -120,9 +120,14 @@
     register: result           
     until: result is succeeded
 
-  - name: Copia Certificado para o host
+  - name: Copia pasta scripts para o Host
     win_copy:
       src: scripts
+      dest: C:\temp
+
+  - name: Copia pasta src pata o Host
+    win_copy:
+      src: src
       dest: C:\temp
 
   - name: Instala o Certificado 

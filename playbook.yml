@@ -2,10 +2,10 @@
 - name: Cria Ambiente Active Directory e ADFS
   hosts: win
   vars:
-    temp_address: 35.196.26.39
-    dc_address: 35.196.26.39
+    temp_address: 34.139.233.71
+    dc_address: 34.139.233.71
     dc_netmask_cidr: 24
-    dc_gateway: 35.196.26.39
+    dc_gateway: 34.139.233.71
     dc_hostname: 'adfs'
     domain_name: "bwglab.local"
     local_admin: '.\administrator'
@@ -120,9 +120,14 @@
     register: result           
     until: result is succeeded
 
-  - name: Copia Certificado para o host
+  - name: Copia pasta scripts para o Host
     win_copy:
       src: scripts
+      dest: C:\temp
+
+  - name: Copia pasta src pata o Host
+    win_copy:
+      src: src
       dest: C:\temp
 
   - name: Instala o Certificado 
@@ -165,6 +170,12 @@
     
   - name: Configura ADFSS
     win_shell: C:\temp\scripts\config-adfs.ps1
+    become: yes
+    become_method: runas
+    become_user: administrator
+
+  - name: Configura Relação de Confiança - ADFS
+    win_shell: C:\temp\scripts\config-rp-adfs.ps1
     become: yes
     become_method: runas
     become_user: administrator
