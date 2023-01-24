@@ -111,7 +111,7 @@ _For more examples, please refer to the [Documentation](https://medium.com/@gui_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `license.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
