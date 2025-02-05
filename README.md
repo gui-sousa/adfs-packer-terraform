@@ -130,8 +130,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()Thiaguera for his continuous support
-* []()BWG PORR@!!!
+* []()Thiago for his continuous support
+* []()42574720504F525240212121-13
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
